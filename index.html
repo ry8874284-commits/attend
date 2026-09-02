@@ -162,6 +162,26 @@
                             value="Present" checked> P</label><label class="radio-label absent"><input type="radio"
                             name="student_14" value="Absent"> A</label></div>
             </div>
+            <div class="student-row"><span class="student-name">Saurya Yadav</span>
+                <div class="radio-group"><label class="radio-label present"><input type="radio" name="student_15"
+                            value="Present" checked> P</label><label class="radio-label absent"><input type="radio"
+                            name="student_15" value="Absent"> A</label></div>
+            </div>
+            <div class="student-row"><span class="student-name">shivansh yadav </span>
+                <div class="radio-group"><label class="radio-label present"><input type="radio" name="student_16"
+                            value="Present" checked> P</label><label class="radio-label absent"><input type="radio"
+                            name="student_16" value="Absent"> A</label></div>
+            </div>
+            <div class="student-row"><span class="student-name">Rishabh Pal</span>
+                <div class="radio-group"><label class="radio-label present"><input type="radio" name="student_17"
+                            value="Present" checked> P</label><label class="radio-label absent"><input type="radio"
+                            name="student_17" value="Absent"> A</label></div>
+            </div>
+            <div class="student-row"><span class="student-name">Ritwik Pal </span>
+                <div class="radio-group"><label class="radio-label present"><input type="radio" name="student_18"
+                            value="Present" checked> P</label><label class="radio-label absent"><input type="radio"
+                            name="student_18" value="Absent"> A</label></div>
+            </div>
             <button type="submit" class="submit-btn">📤 Attendance Submit Karein</button>
         </form>
     </div>
@@ -186,7 +206,7 @@
                 records: []
             };
 
-            for (let i = 1; i <= 14; i++) {
+            for (let i = 1; i <= 18; i++) {
                 let status = document.querySelector(`input[name="student_${i}"]:checked`).value;
                 attendanceData.records.push({ id: i, status: status });
             }
